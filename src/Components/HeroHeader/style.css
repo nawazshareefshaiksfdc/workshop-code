@@ -9,6 +9,14 @@
     position: relative;
     margin: auto;
   }
+
+  body{
+    padding: 20px;
+  }
+  .HeroHeader{
+    overflow: hidden;
+    height: 50vh;
+  }
   
   .mySlides {
     display: none;
