@@ -1,0 +1,41 @@
+.shop-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .shop-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .shop-container p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .shop-info {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px;
+  }
+  
+  .shop-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .shop-info ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .shop-info li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
