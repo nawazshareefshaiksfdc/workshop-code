@@ -5,7 +5,6 @@ import MyButton from '../MyButton';
 
 const NavBar = () => {
   const navigate = useNavigate();
-
   return (
     <div className='NavBar'>
       <MyButton onClick={() => navigate('/home')} Name="Home" />
