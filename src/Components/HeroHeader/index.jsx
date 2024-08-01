@@ -1,5 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import './style.css';
+import bigImage1 from './images/largeImages/bigImage1.webp'
+import bigImage2 from './images/largeImages/bigImage2.webp'
+import bigImage3 from './images/largeImages/bigImage3.webp'
+import bigImage4 from './images/largeImages/bigImage4.webp'
+import bigImage5 from './images/largeImages/bigImage5.webp'
+import bigImage6 from './images/largeImages/bigImage6.webp'
+
 
 const HeroHeader = () => {
   const [currentSlide, setCurrentSlide] = useState(1);
@@ -7,12 +14,12 @@ const HeroHeader = () => {
   const autoplayInterval = 3000; // autoplay interval in milliseconds
 
   const slideImages = [
-    { src: "https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/04bb152bb2d3f429.jpg?q=20" },
-    { src: "https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/3c0e1e3aca8b3c9d.jpg?q=20" },
-    { src: "https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/5bd9c5c309353306.jpeg?q=20" },
-    { src: "https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/45491294b0d546c4.jpg?q=20" },
-    { src: "https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/b61d308e686f6f8e.jpg?q=20" },
-    { src: "https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/4373e1bc9ffd7daa.jpeg?q=20" }
+    { src: bigImage1},
+    { src: bigImage2},
+    { src: bigImage3},
+    { src: bigImage4},
+    { src: bigImage5},
+    { src: bigImage6}
   ];
 
   // Function to navigate slides
