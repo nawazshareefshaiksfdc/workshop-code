@@ -1,19 +1,29 @@
 import React from 'react';
 import './style.css';
 
-const FilterHeader = () => {
-    const FilterImages = [
-        { alt: "Grocery", src: "https://rukminim2.flixcart.com/flap/64/64/image/29327f40e9c4d26b.png?q=100" },
-        { alt: "Mobiles", src: "https://rukminim2.flixcart.com/flap/64/64/image/22fddf3c7da4c4f4.png?q=100" },
-        { alt: "Fashion", src: "https://rukminim2.flixcart.com/fk-p-flap/64/64/image/0d75b34f7d8fbcb3.png?q=100" },
-        { alt: "Electronics", src: "https://rukminim2.flixcart.com/flap/64/64/image/69c6589653afdb9a.png?q=100" },
-        { alt: "Home & Furniture", src: "https://rukminim2.flixcart.com/flap/64/64/image/ab7e2b022a4587dd.jpg?q=100" },
-        { alt: "Appliances", src: "https://rukminim2.flixcart.com/fk-p-flap/64/64/image/0139228b2f7eb413.jpg?q=100" },
-        { alt: "Travel", src: "https://rukminim2.flixcart.com/flap/64/64/image/71050627a56b4693.png?q=100" },
-        { alt: "Beauty, Toys & More", src: "https://rukminim2.flixcart.com/flap/64/64/image/dff3f7adcf3a90c6.png?q=100" },
-        { alt: "Two Wheelers", src: "https://rukminim2.flixcart.com/fk-p-flap/64/64/image/05d708653beff580.png?q=100" },
-    ];
 
+import GroceryImage from './images/smallImages/Grocery.webp';
+import Mobiles from './images/smallImages/Mobile.webp';
+import Fashion from './images/smallImages/Fashion.webp';
+import Electronics from './images/smallImages/Electronics.webp';
+import Homefurniture from './images/smallImages/Homefurniture.webp'
+import Appliances from './images/smallImages/Appliances.webp';
+import Travel from './images/smallImages/Appliances.webp';
+import Beautytoysmore from './images/smallImages/Beauty, Toys & more.webp'
+import Twowheelers from './images/smallImages/Twowheelers.webp'; 
+const FilterHeader = () => {  
+    const FilterImages = [
+        { alt: "Grocery", src: GroceryImage },
+        { alt: "Mobiles", src: Mobiles},
+        { alt: "Fashion", src: Fashion},
+        { alt: "Electronics", src: Electronics},
+        { alt: "Home & Furniture", src: Homefurniture},
+        { alt: "Appliances", src: Appliances},
+        { alt: "Travel", src: Travel},
+        { alt: "Beauty, Toys & More", src: Beautytoysmore},
+        { alt: "Two Wheelers", src: Twowheelers},
+    ];
+ 
     return (
         <div className='FilterHeader'>
             {FilterImages.map((slide, index) => (
