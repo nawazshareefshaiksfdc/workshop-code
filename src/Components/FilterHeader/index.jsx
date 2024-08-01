@@ -26,13 +26,20 @@ const FilterHeader = () => {
  
     return (
         <div className='FilterHeader'>
-            {FilterImages.map((slide, index) => (
-                <div key={index} className='filter-image-container'>
-                    <img id={`slideImage-${index + 1}`} src={slide.src} alt={slide.alt} />
-                    <div className='filter-data'>{slide.alt}</div>
-                </div>
-            ))}
-        </div>
+        {FilterImages.map((slide, index) => (
+          <div key={index} className='filter-image-container'>
+            <img id={`slideImage-${index + 1}`} src={slide.src} alt={slide.alt} />
+            <div class="dropdown">
+              <div className='filter-data'>{slide.alt}<span>&gt;</span></div>
+              <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
     );
 }
 
