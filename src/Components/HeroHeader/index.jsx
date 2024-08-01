@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './style.css';
-import bigImage1 from './images/largeImages/bigImage1.webp'
-import bigImage2 from './images/largeImages/bigImage2.webp'
-import bigImage3 from './images/largeImages/bigImage3.webp'
-import bigImage4 from './images/largeImages/bigImage4.webp'
-import bigImage5 from './images/largeImages/bigImage5.webp'
-import bigImage6 from './images/largeImages/bigImage6.webp'
+import bigImage1 from './largeImages/bigImage1.webp'
+import bigImage2 from './largeImages/bigImage2.webp'
+import bigImage3 from './largeImages/bigImage3.webp'
+import bigImage4 from './largeImages/bigImage4.webp'
+import bigImage5 from './largeImages/bigImage5.webp'
+import bigImage6 from './largeImages/bigImage6.webp'
 
 
 const HeroHeader = () => {

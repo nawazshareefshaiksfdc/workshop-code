@@ -2,15 +2,15 @@ import React from 'react';
 import './style.css';
 
 
-import GroceryImage from './images/smallImages/Grocery.webp';
-import Mobiles from './images/smallImages/Mobile.webp';
-import Fashion from './images/smallImages/Fashion.webp';
-import Electronics from './images/smallImages/Electronics.webp';
-import Homefurniture from './images/smallImages/Homefurniture.webp'
-import Appliances from './images/smallImages/Appliances.webp';
-import Travel from './images/smallImages/Appliances.webp';
-import Beautytoysmore from './images/smallImages/Beauty, Toys & more.webp'
-import Twowheelers from './images/smallImages/Twowheelers.webp'; 
+import GroceryImage from './smallImages/Grocery.webp';
+import Mobiles from './smallImages/Mobile.webp';
+import Fashion from './smallImages/Fashion.webp';
+import Electronics from './smallImages/Electronics.webp';
+import Homefurniture from './smallImages/Homefurniture.webp'
+import Appliances from './smallImages/Appliances.webp';
+import Travel from './smallImages/Appliances.webp';
+import Beautytoysmore from './smallImages/Beauty, Toys & more.webp'
+import Twowheelers from './smallImages/Twowheelers.webp'; 
 const FilterHeader = () => {  
     const FilterImages = [
         { alt: "Grocery", src: GroceryImage },
