@@ -8,7 +8,7 @@ import Fashion from './smallImages/Fashion.webp';
 import Electronics from './smallImages/Electronics.webp';
 import Homefurniture from './smallImages/Homefurniture.webp'
 import Appliances from './smallImages/Appliances.webp';
-import Travel from './smallImages/Appliances.webp';
+import Travel from './smallImages/Travel.webp';
 import Beautytoysmore from './smallImages/Beauty, Toys & more.webp'
 import Twowheelers from './smallImages/Twowheelers.webp'; 
 const FilterHeader = () => {  
