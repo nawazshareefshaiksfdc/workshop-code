@@ -13,13 +13,13 @@ const FilterHeader = () => {
   const FilterImages = [
     { alt: "Grocery", src: GroceryImage },
     { alt: "Mobiles", src: Mobiles },
-    { alt: "Fashion", src: Fashion, sub: ["Men's Top Wear", "Women's Top Wear", "Women's Ethnic Wear"] },
-    { alt: "Electronics", src: Electronics, sub: ['Cameras', 'Power Bank', 'Laptop Adoptors', 'Router'] },
-    { alt: "Home & Furniture", src: Homefurniture },
+    { alt: "Fashion", src: Fashion, sub: ["Men's Top Wear", "Women's Top Wear", "Women's Ethnic Wear", "Men's Footwear", "Women's Footwear", "Men's Watches", "Watches & Accessories"] },
+    { alt: "Electronics", src: Electronics, sub: ['Audio', 'Electronic GST store', 'Cameras & Accessories', 'Gaming', "Health & Personal care "] },
+    { alt: "Home & Furniture", src: Homefurniture, sub: ["home furnishing", "Living Room Furniture", "Kitchen & Dining", "Kitchen Furniture", "Space saving and Dining"] },
     { alt: "Appliances", src: Appliances },
     { alt: "Travel", src: Travel },
-    { alt: "Beauty, Toys & More", src: Beautytoysmore },
-    { alt: "Two Wheelers", src: Twowheelers },
+    { alt: "Beauty, Toys & More", src: Beautytoysmore, sub: ["Beauty & Personal Care", "Men's Grooming", "Food & Drinks", "Nutrition & Health Care", "Toys & School Supplies"] },
+    { alt: "Two Wheelers", src: Twowheelers, sub: ["Petrol Vehicles", "Electric Vehicles"] }
   ];
   return (
     <div className='FilterHeader'>

@@ -49,7 +49,7 @@ const HeroHeader = () => {
       <div className="slideshow-container">
         {slideImages.map((slide, index) => (
           <div key={slide.src} className={`mySlides fade ${index + 1 === currentSlide ? 'active' : ''}`}>
-            <img id={`slideImage-${index + 1}`} src={slide.src} alt={`Slide ${index + 1}`} />
+            <img id={`slideImage-${index + 1}`} src={slide.src} alt={`Slide ${index + 1}`}  className='slider-image'/>
           </div>
         ))}
         <button className="prev" onClick={() => navigateSlides(-1)}>&#10094;</button>

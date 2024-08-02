@@ -4,14 +4,12 @@
   padding: 0;
 }
 
+
+
 .slideshow-container {
   max-width: 100%;
   position: relative;
   margin: auto;
-}
-
-body{
-  padding: 20px;
 }
 .HeroHeader{
   overflow: hidden;
@@ -30,12 +28,17 @@ body{
   opacity: 1;
 }
 
+.slider-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
   width: auto;
-  padding: 16px;
+  padding: 32px 16px;
   color: black;
   font-weight: bold;
   font-size: 18px;
@@ -44,7 +47,7 @@ body{
   user-select: none;
   background-color: white;
   border: none;
-  margin-top: 90px;
+  margin-top: 64px;
 }
 
 .next {
