@@ -1,27 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './style.css';
-import bigImage1 from './largeImages/bigImage1.webp'
-import bigImage2 from './largeImages/bigImage2.webp'
-import bigImage3 from './largeImages/bigImage3.webp'
-import bigImage4 from './largeImages/bigImage4.webp'
-import bigImage5 from './largeImages/bigImage5.webp'
-import bigImage6 from './largeImages/bigImage6.webp'
-
-
+import slideImages from './slideImages';
 const HeroHeader = () => {
   const [currentSlide, setCurrentSlide] = useState(1);
   const totalSlides = 6;
   const autoplayInterval = 3000; // autoplay interval in milliseconds
-
-  const slideImages = [
-    { src: bigImage1},
-    { src: bigImage2},
-    { src: bigImage3},
-    { src: bigImage4},
-    { src: bigImage5},
-    { src: bigImage6}
-  ];
-
   // Function to navigate slides
   const navigateSlides = (step) => {
     setCurrentSlide((prev) => {
@@ -34,22 +17,19 @@ const HeroHeader = () => {
       return newSlide;
     });
   };
-
   // Autoplay functionality
   useEffect(() => {
     const timer = setInterval(() => {
       navigateSlides(1);
     }, autoplayInterval);
-
     return () => clearInterval(timer); // Clean up the interval on component unmount
   }, []);
-
   return (
     <div className="HeroHeader">
       <div className="slideshow-container">
         {slideImages.map((slide, index) => (
           <div key={slide.src} className={`mySlides fade ${index + 1 === currentSlide ? 'active' : ''}`}>
-            <img id={`slideImage-${index + 1}`} src={slide.src} alt={`Slide ${index + 1}`}  className='slider-image'/>
+            <img id={`slideImage-${index + 1}`} src={slide.src} alt={`Slide ${index + 1}`} className='slider-image' />
           </div>
         ))}
         <button className="prev" onClick={() => navigateSlides(-1)}>&#10094;</button>
@@ -63,5 +43,4 @@ const HeroHeader = () => {
     </div>
   );
 };
-
 export default HeroHeader;
